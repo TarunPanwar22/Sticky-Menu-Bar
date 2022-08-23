@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar </title>
+    <style>
+        body{
+            margin: 0px ; 
+
+        }
+        #header{
+            text-align: center;
+        }
+        
+        #logo{
+            width: 200px;
+            height: auto;
+            padding: 5px ;
+        }
+
+        #menu-bar{
+            text-align: center; 
+            background-color: cadetblue;  
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding: 15px 10px ;
+            color: white;
+            font-size: 18px ;
+            font-weight: bold;
+        }
+
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #img{
+            width: 100%;
+        }
+        .sticky{
+            position: fixed; 
+            top: 0; 
+            width: 100%;
+        }
+        p{
+            text-align: justify;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="https://png.pngtree.com/png-clipart/20200709/original/pngtree-nature-logo-template-design-png-image_3580045.jpg" alt="Nature Image" height="100" width="100px" id="logo">
+    </div>
+
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact Us </li>
+    </nav>
+        <div id="container">
+           <h1>About Us </h1> 
+    <img src="https://mediaserver.goepson.com/ImConvServlet/imconv/ab6b956e0863668f3adcca5683a4c6816908e6b2/original?use=productpictures&assetDescr=001-1400X570" alt="" id="img">
+    <img src="" alt="">
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, accusantium. Impedit dolor nihil reiciendis. Tenetur aperiam minima, asperiores nemo dolorem, a sapiente sunt nihil aliquid corrupti molestias delectus, veritatis voluptatibus voluptas maxime consequatur reprehenderit vitae temporibus mollitia expedita perspiciatis? Laudantium perferendis tenetur doloribus sapiente dolorum magnam, soluta consequuntur aspernatur odit commodi distinctio, nobis maxime natus qui vitae reiciendis, impedit aliquid beatae cumque voluptate ratione? Possimus magni aliquid exercitationem, veritatis quaerat nam sapiente iste quod, sequi eius iusto facilis, sunt unde. Laborum, fugiat soluta temporibus ducimus a animi voluptatem impedit quam, velit obcaecati ea. Sunt cupiditate nisi voluptatum, odio, saepe omnis, rerum iusto porro accusamus quis distinctio? Inventore vel similique quasi ullam fugit quae, dolorem pariatur rerum eum aperiam. Ad distinctio soluta amet nam, similique ipsa nihil. Minima excepturi ad sapiente quis ut nisi, fugit sint nobis eum impedit voluptates, aperiam amet neque alias, recusandae cum iste mollitia cupiditate iure debitis obcaecati et. Suscipit, est. Iure laboriosam omnis quam blanditiis molestiae, fugiat non sapiente, a nemo corrupti aperiam amet repellendus accusantium vero provident tempore numquam inventore natus repudiandae reprehenderit necessitatibus cum illum. Autem fuga minima sit ut consequatur totam, incidunt tempora corporis velit, voluptas, nihil fugit sequi praesentium? Laboriosam maxime eos, aspernatur amet neque similique ipsum molestias enim dolore ex eligendi sunt voluptatibus nulla. Possimus, dolore architecto, ut facere incidunt fugiat ex maiores eligendi tempore libero placeat? Eos nihil fuga sapiente perspiciatis error ipsam nam in, voluptatem, et repellat omnis. Facilis beatae suscipit natus soluta. Rerum numquam quos eaque quod accusantium impedit laudantium, sed laborum ad nam ut! Vitae, accusamus omnis! Eveniet fugit officia sapiente quod, totam dolor deleniti natus fuga porro mollitia consectetur, voluptas, qui cupiditate. Soluta qui, odio nisi minus illo distinctio similique consequatur quam vero excepturi! Harum velit nisi amet, consectetur impedit distinctio nobis sint cum praesentium quas minima voluptate illo officiis eligendi facilis non. Similique quo delectus ad provident iste quas molestias dignissimos qui aut id eos, est minus, esse, voluptatibus hic reprehenderit possimus? Eius quidem praesentium expedita, commodi, sapiente enim officia nihil repellendus ducimus possimus asperiores consequatur quis nam nemo sed voluptatem eos optio dolor! Cumque, earum? Libero fugiat eligendi voluptates commodi est odit maxime aspernatur architecto! Vero quis dolorum numquam quas voluptatum ipsa obcaecati itaque architecto laborum. Quibusdam, impedit voluptatibus illo voluptatum fuga necessitatibus architecto quidem possimus, blanditiis odio, eum doloremque quos accusamus facilis? Suscipit eligendi aspernatur sapiente quos quam, incidunt vero temporibus provident, obcaecati cum vitae exercitationem quasi. Saepe cumque deleniti quisquam explicabo amet corrupti accusantium quas reiciendis assumenda error perferendis vel hic quam, eligendi, cum doloribus illo nemo ad doloremque. Natus sit corrupti unde minus enim, sed maiores, reiciendis eligendi inventore soluta dolore rem ex accusamus? Eum quasi quos velit mollitia ab accusamus repudiandae veritatis voluptas deserunt quae provident laboriosam doloribus dolore consectetur sint unde odit, eveniet repellendus maxime ratione! Cupiditate distinctio vitae quam, provident mollitia odio voluptate ipsum ullam quis officia, nesciunt, molestiae voluptates autem at sed iusto inventore laborum delectus architecto sint rerum numquam repellat iure ab! Placeat assumenda possimus quidem?
+    </p>
+        </div>
+
+        <script>
+            window.addEventListener('scroll' , function(){
+                let navbar = document.getElementById("menu-bar")
+                if(window.pageYOffset >=264){
+                    navbar.classList.add('sticky');
+                }
+                else{
+                    navbar.classList.remove('sticky');
+                }
+            });
+        </script>
+</body>
+</html>
